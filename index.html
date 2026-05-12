@@ -292,13 +292,13 @@
   <p class="tagline">
     forgegen analyses the rhythm, phrase structure, and energy of any audio
     track, then writes a phrase-aware <code>.funscript</code> ready to drive
-    any haptic device. Phrase-level mode shaping, comparison-strip preview,
-    stable beat tracking — and a clean handoff to FunscriptForge for refinement.
+    any haptic device. Live per-stage progress, stable beat tracking — and
+    a clean handoff to FunscriptForge for refinement.
   </p>
 
   <div class="dl-buttons">
     <a class="btn btn-primary"
-       href="https://github.com/liquid-releasing/forgegen-releases/releases/latest/download/ForgeGen-windows.zip"
+       href="https://github.com/liquid-releasing/forgegen-releases/releases/latest/download/ForgeGen-Setup-windows.msi"
        download>
       <!-- Windows icon -->
       <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -307,31 +307,32 @@
       Download for Windows
     </a>
     <a class="btn btn-secondary"
-       href="https://github.com/liquid-releasing/forgegen-releases/releases/latest/download/ForgeGen-macos.zip"
-       download>
+       href="https://github.com/liquid-releasing/forgegen-releases/releases"
+       target="_blank" rel="noopener">
       <!-- Apple icon -->
       <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
         <path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/>
       </svg>
-      Download for macOS
+      macOS — coming soon
     </a>
     <a class="btn btn-secondary"
-       href="https://github.com/liquid-releasing/forgegen-releases/releases/latest/download/ForgeGen-linux.tar.gz"
-       download>
+       href="https://github.com/liquid-releasing/forgegen-releases/releases"
+       target="_blank" rel="noopener">
       <!-- Terminal icon -->
       <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
         <path d="M20 3H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm0 16H4V7h16v12zm-9 2v-2h2v2h-2zM5.5 11.5l1.41-1.42L10 13.17l-3.09 3.09L5.5 14.84 7.67 12.5 5.5 11.5zm5.5 4h5v-2h-5v2z"/>
       </svg>
-      Download for Linux
+      Linux — coming soon
     </a>
   </div>
   <p class="version-note" id="version-line">
     <span id="version-label">Latest release</span>
-    &nbsp;·&nbsp; Free &nbsp;·&nbsp; No Python required &nbsp;·&nbsp;
+    &nbsp;·&nbsp; Free &nbsp;·&nbsp; 3.5 MB installer &nbsp;·&nbsp;
     <a href="https://github.com/liquid-releasing/forgegen" style="color:var(--muted);">Open source</a>
   </p>
   <p class="version-note" style="margin-top:0.5rem;">
     Pre-release software. Provided as-is, without warranty of any kind. Use at your own risk.
+    macOS &amp; Linux installers ship with the next tag (CI matrix configured).
   </p>
 </section>
 
@@ -423,8 +424,8 @@
       <tr><td><strong>RAM</strong></td><td>4 GB</td><td>8 GB or more</td></tr>
       <tr><td><strong>Disk</strong></td><td>1 GB for the app plus room for your media and outputs</td><td>SSD recommended for batch runs</td></tr>
       <tr><td><strong>Display</strong></td><td>1920 × 1080</td><td>2560 × 1440 QHD</td></tr>
-      <tr><td><strong>Media length</strong></td><td colspan="2">v0.1 expects ≲10-minute tracks; long-form scaling is on the v0.5 roadmap.</td></tr>
-      <tr><td><strong>ffmpeg</strong></td><td colspan="2">Bundled — no install required</td></tr>
+      <tr><td><strong>Media length</strong></td><td colspan="2">v0.2 handles long files (multi-hour tested); auto-chapter splits long tracks into chapters.</td></tr>
+      <tr><td><strong>ffmpeg</strong></td><td colspan="2">Required on PATH — install from <a href="https://ffmpeg.org/download.html" target="_blank" rel="noopener" style="color:var(--accent2);">ffmpeg.org</a> (or place <code>ffmpeg.exe</code> alongside the install). Will be bundled in a follow-up release.</td></tr>
       <tr><td><strong>Python</strong></td><td colspan="2">Not required — standalone installer</td></tr>
     </tbody>
   </table>
@@ -496,10 +497,10 @@
 <div class="cta-bar">
   <section class="section">
     <h2 class="section-title">Ready to get started?</h2>
-    <p>Download the latest release, extract, and run. No install wizard, no registry entries.</p>
+    <p>Download, install, and launch — a 3.5 MB MSI. macOS &amp; Linux ship with the next tag.</p>
     <div class="dl-buttons">
       <a class="btn btn-primary"
-         href="https://github.com/liquid-releasing/forgegen-releases/releases/latest/download/ForgeGen-windows.zip"
+         href="https://github.com/liquid-releasing/forgegen-releases/releases/latest/download/ForgeGen-Setup-windows.msi"
          download>
         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
           <path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/>
@@ -507,20 +508,20 @@
         Download for Windows
       </a>
       <a class="btn btn-secondary"
-         href="https://github.com/liquid-releasing/forgegen-releases/releases/latest/download/ForgeGen-macos.zip"
-         download>
+         href="https://github.com/liquid-releasing/forgegen-releases/releases"
+         target="_blank" rel="noopener">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
           <path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/>
         </svg>
-        Download for macOS
+        macOS — coming soon
       </a>
       <a class="btn btn-secondary"
-         href="https://github.com/liquid-releasing/forgegen-releases/releases/latest/download/ForgeGen-linux.tar.gz"
-         download>
+         href="https://github.com/liquid-releasing/forgegen-releases/releases"
+         target="_blank" rel="noopener">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
           <path d="M20 3H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm0 16H4V7h16v12zm-9 2v-2h2v2h-2zM5.5 11.5l1.41-1.42L10 13.17l-3.09 3.09L5.5 14.84 7.67 12.5 5.5 11.5zm5.5 4h5v-2h-5v2z"/>
         </svg>
-        Download for Linux
+        Linux — coming soon
       </a>
     </div>
     <p class="version-note" style="margin-top:1rem;">
